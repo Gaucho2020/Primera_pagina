@@ -95,10 +95,10 @@ t.forward(40 * 5)
 turtle.done()
 
 ```
-```
+
 # Salida: Dibuja una "L".
 <img width="647" height="496" alt="image" src="https://github.com/user-attachments/assets/446a706d-f6fe-424b-8f86-0101afe378df" />
-```
+
 
 ## Dibujando un cuadrado con una diagonal entre vertices
 
@@ -120,15 +120,102 @@ turtle.done()
 
 ```
 
-```
 # Salida 
 <img width="604" height="505" alt="image" src="https://github.com/user-attachments/assets/3b4c87f2-a393-458e-97f8-0cc2c8815ce1" />
 
-```
-
 ## Reto 4: Encapsula los comportamientos anteriores usando funciones
 
+Reescribe los retos anteriores creando funciones que representen los movimientos de la tortuga solo con texto.
 
+### Solución presentada
+
+```
+# Entrada
+
+import turtle
+
+t = turtle.Turtle()   # Crea una tortuga
+pasos = int(input("¿Cuántos pasos quieres dar hacia adelante?: "))
+bajar = int(input("¿Cuántas líneas hacia abajo quieres?: "))
+print("Creando una tortuga simulada que da", pasos, "pasos adelante")
+print("y también", bajar, "pasos hacia abajo")
+print("-" * pasos,"→")
+
+t.forward(100)        # Avanza 100 unidades
+
+for i in range(bajar):
+    print(" " * pasos + " |")
+print(" " * pasos + " ↓")
+
+turtle.done()         # Mantiene la ventana abierta
+```
+
+```
+# Salida
+¿Cuántos pasos quieres dar hacia adelante?: 10
+¿Cuántas líneas hacia abajo quieres?: 10
+Creando una tortuga simulada que da 10 pasos adelante
+y también 10 pasos hacia abajo
+---------- →
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+           |
+           ↓
+```
+En este caso los movimientos son realizados de acuerdo a la información introducida por el usuario.
+
+## Reto 5: La tortuga baja las escalas
+
+### Solución presentada
+
+```Python
+# Entrada
+import turtle
+
+t = turtle.Turtle()   # Crea una tortuga
+
+pasos = int(input("¿Cuántos pasos quieres dar hacia adelante?: "))
+bajar = int(input("¿Cuántas líneas hacia abajo quieres?: "))
+t.forward(100)        # Avanza 100 unidades
+for i in range(3):
+    print(" " * (i * pasos) + "-" * pasos,"→")
+    for j in range(bajar):
+        print(" " * (i * pasos + pasos) + " |")
+    print(" " * (i * pasos + pasos) + " ↓")
+print("Creando una tortuga simulada que da", pasos, "pasos adelante")
+print("y", bajar, "pasos hacia abajo en una escalera de 3 niveles")
+turtle.done()         # Mantiene la ventana abierta
+
+```
+
+```Python
+# Salida
+¿Cuántos pasos quieres dar hacia adelante?: 5
+¿Cuántas líneas hacia abajo quieres?: 2
+----- →
+      |
+      |
+      ↓
+     ----- →
+           |
+           |
+           ↓
+          ----- →
+                |
+                |
+                ↓
+Creando una tortuga simulada que da 5 pasos adelante
+y 2 pasos hacia abajo en una escalera de 3 niveles
+
+```
+## Referencias de IA
 
 
 
