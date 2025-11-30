@@ -1,4 +1,4 @@
-# Area 2 - Ejercicios Unidad 1 📝
+# Tarea 2 - Ejercicios Unidad 1 📝
 
 # Aprendiendo a programar como una tortuga 🐢
 
@@ -149,7 +149,120 @@ Cada escalón debe conservar la posición horizontal acumulada y dibujar correct
 
 ### Solución presentada
 
+### Opción # 1 : Ingresando código de manera manual
+```
+# Entrada
+print("Creando una tortuga simulada que da 5 pasos hacia adelante y 3 pasos hacia abajo en 3 secciones de escalera")
 
+# Sección 1
+print(" —" * (5) + "┐")
+Caracter = ("|")
+print("  " * (5)+ Caracter)
+print("  " * (5)+ Caracter)
+print("  " * (5)+ Caracter)
+print("  " * (5)+ Caracter)
+print("  " * (5)+ "↓")
+
+# Sección 2
+print("  " * (5) + " —" * (5) + "┐")
+Caracter = ("|")
+print("  " * (10)+ Caracter)
+print("  " * (10)+ Caracter)
+print("  " * (10)+ Caracter)
+print("  " * (10)+ Caracter)
+print("  " * (10)+ "↓")
+
+# Sección 3
+print("    " * (5) + " —" * (5) + "┐")
+Caracter = ("|")
+print("  " * (15)+ Caracter)
+print("  " * (15)+ Caracter)
+print("  " * (15)+ Caracter)
+print("  " * (15)+ Caracter)
+print("  " * (15)+ "↓")
+
+```
+
+```
+# Salida
+
+Creando una tortuga simulada que da 5 pasos hacia adelante y 3 pasos hacia abajo en 3 secciones de escalera
+ — — — — —┐
+          |
+          |
+          |
+          |
+          ↓
+           — — — — —┐
+                    |
+                    |
+                    |
+                    |
+                    ↓
+                     — — — — —┐
+                              |
+                              |
+                              |
+                              |
+                              ↓
+
+```
+Esta versión manual realiza una escalera de tres niveles donde la tortuga avanza 5 pasoa hacia adelante, 3 hacia abajo en 3 secciones de escalones.
+
+### Opción # 2 : Usando funciones y ciclos
+
+
+```
+# Entrada
+ancho = int(input("¿Cuántos pasos quieres dar adelante?: "))
+alto = int(input("¿Cuántos pasos quieres dar abajo?: "))
+secciones = int(input("¿Cuántas secciones de escalones deseas?: "))
+
+def cantidad_escalas(ancho, alto, secciones):
+    desplazamiento = 0                                      # Control de indentación para alinear los escalones
+
+    for i in range(secciones):        
+        print(" " * desplazamiento + "—" * ancho + "┐")     # Movimiento hacia adelante
+        
+        for j in range(alto):                               # Movimiento hacia abajo
+            print(" " * (desplazamiento + ancho) + "|")
+        print(" " * (desplazamiento + ancho) + "↓")
+        
+        desplazamiento += ancho                             # Incrementar el espacio por línea
+
+cantidad_escalas(ancho, alto, secciones)
+
+```
+```
+# Salida
+¿Cuántos pasos quieres dar adelante?: 5
+¿Cuántos pasos quieres dar abajo?: 2
+¿Cuántas secciones de escalones deseas?: 3
+—————┐
+     |
+     |
+     ↓
+     —————┐
+          |
+          |
+          ↓
+          —————┐
+               |
+               |
+               ↓
+```
+Esta versión permite el movimiento del objeto tortuga en forma escalonada acorde a los datos introducidos por el usuario. Para esto usa funciones y ciclos for i in para repetir escalones.
+
+## Referencias de IA
+
+- Gemini: Conversación para indicaciones de como generar nuevo archivo en el repositorio. https://gemini.google.com/app/42f2e5a182bcd775?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
+- Gemini: Conversación para obtener orientación en ejercicio 1 y uso de VS Code para estructuración de código. https://gemini.google.com/app/47a9e6d79158136a?utm_source=app_launcher&utm_medium=owned&utm_campaign=base_all
+- Copilot: Conversación en versión de escritorio para orientación en ejercicio 3. https://copilot.microsoft.com/shares/JYbgDpHJbFShg9ExzhApB
+- Copilot: Conversación en versión de escritorio para orientación en ejercicio 5. https://copilot.microsoft.com/shares/AswMRiMxGaVnfi5F8iNBY
+
+## Referencias 
+- Github. (s.f.). Documentación de Github. https://docs.github.com/es/enterprise-cloud@latest/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+  
 
 
 
