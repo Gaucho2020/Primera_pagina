@@ -128,69 +128,6 @@ Cada escalón debe conservar la posición horizontal acumulada y dibujar correct
 
 ### Solución presentada
 
-### Opción # 1 : Ingresando código de manera manual
-```
-# Entrada
-print("Creando una tortuga simulada que da 5 pasos hacia adelante y 3 pasos hacia abajo en 3 secciones de escalera")
-
-# Sección 1
-print(" —" * (5) + "┐")
-Caracter = ("|")
-print("  " * (5)+ Caracter)
-print("  " * (5)+ Caracter)
-print("  " * (5)+ Caracter)
-print("  " * (5)+ Caracter)
-print("  " * (5)+ "↓")
-
-# Sección 2
-print("  " * (5) + " —" * (5) + "┐")
-Caracter = ("|")
-print("  " * (10)+ Caracter)
-print("  " * (10)+ Caracter)
-print("  " * (10)+ Caracter)
-print("  " * (10)+ Caracter)
-print("  " * (10)+ "↓")
-
-# Sección 3
-print("    " * (5) + " —" * (5) + "┐")
-Caracter = ("|")
-print("  " * (15)+ Caracter)
-print("  " * (15)+ Caracter)
-print("  " * (15)+ Caracter)
-print("  " * (15)+ Caracter)
-print("  " * (15)+ "↓")
-
-```
-
-```
-# Salida
-
-Creando una tortuga simulada que da 5 pasos hacia adelante y 3 pasos hacia abajo en 3 secciones de escalera
- — — — — —┐
-          |
-          |
-          |
-          |
-          ↓
-           — — — — —┐
-                    |
-                    |
-                    |
-                    |
-                    ↓
-                     — — — — —┐
-                              |
-                              |
-                              |
-                              |
-                              ↓
-
-```
-Esta versión manual realiza una escalera de tres niveles donde la tortuga avanza 5 pasoa hacia adelante, 3 hacia abajo en 3 secciones de escalones.
-
-### Opción # 2 : Usando funciones y ciclos
-
-
 ```
 # Entrada
 ancho = (5)
