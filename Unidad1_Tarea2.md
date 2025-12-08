@@ -147,6 +147,7 @@ def abajo(alto):                 #Función para ir abajo
     global alineación
     for _ in range(alto):
         print(" " * alineación + "|")
+    print(" " * alineación + "↓")
 ```
 
 ```
@@ -167,14 +168,17 @@ abajo(3)
      |
      |
      |
+     ↓
      —————┐
           |
           |
           |
+          ↓
           —————┐
                |
                |
                |
+               ↓
 ```
 Esta versión permite el movimiento del objeto tortuga en forma escalonada. Para esto usa funciones y ciclos "for i in" para definir espacio entre escalones.
 
