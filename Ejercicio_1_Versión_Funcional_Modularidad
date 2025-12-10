@@ -1,0 +1,22 @@
+# E
+
+
+
+
+# Evolución de Mini Turtle 🐢
+
+**Mini Turtle** es un paquete educativo en Python que simula los movimientos de una tortuga en la consola usando texto.  
+Su objetivo es enseñar conceptos básicos de programación como **estado global**, **funciones** y **modularidad**, de manera divertida y accesible para principiantes.
+
+---
+
+## ✨ Características principales
+- Dibujar líneas horizontales con la función `adelante`.
+- Dibujar líneas verticales con la función `abajo`.
+- Reiniciar la posición de la tortuga con `reinicio`.
+- Representación visual simple en consola con caracteres ASCII y un ícono de tortuga 🐢.
+- Código modular y organizado en un paquete Python (`mini_turtle`).
+
+---
+
+## 📂 Estructura del proyecto
