@@ -114,3 +114,9 @@ He podido obtener muchos conceptos útiles en el proceso del desarrollo, además
 ---
 * **Resúmenes y Estructura:** Generados con la asistencia de un modelo de lenguaje de IA para estructurar y resumir los temas principales de la Unidad 1.
 * **Ejemplos de Código:** Los ejemplos simples de Python (Aritmética y Cadenas) fueron desarrollados con la asistencia de IA para ilustrar los conceptos de la unidad.
+
+# Nuevas entradas
+
+### [Acceso a Tarea 2] https://github.com/Gaucho2020/Primera_pagina/blob/main/Unidad1_Tarea2.md
+
+
