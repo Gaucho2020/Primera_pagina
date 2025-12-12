@@ -117,8 +117,9 @@ He podido obtener muchos conceptos útiles en el proceso del desarrollo, además
 
 # Nuevas entradas
 
-### [Acceso a Tarea 2] https://github.com/Gaucho2020/Primera_pagina/blob/main/Unidad1_Tarea2.md
-### [Acceso a Tarea 3. Ejercicio 1: Versión Funcional (Modularidad)] https://github.com/Gaucho2020/Primera_pagina/blob/main/Ejercicio_1_Versi%C3%B3n_Funcional_Modularidad.md
+[Acceso a Tarea 2](https://github.com/Gaucho2020/Primera_pagina/blob/main/Unidad1_Tarea2.md)
+
+[Acceso a Tarea 3. Ejercicio 1: Versión Funcional (Modularidad)](https://github.com/Gaucho2020/Primera_pagina/blob/main/Ejercicio_1_Versi%C3%B3n_Funcional_Modularidad.md)
 
 
 
