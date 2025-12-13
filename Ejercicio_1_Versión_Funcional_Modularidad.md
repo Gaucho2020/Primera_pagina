@@ -43,52 +43,6 @@ def reinicio():       # Reinicia la variable global 'alineación' a 0. Sirve par
 *  **Por qué:** permite reiniciar la posición o estado del sistema.
 *  **Cómo:** usa la palabra clave global para modificar la variable definida fuera de la función.
 
-#### Ejemplo
-
-```
-# Llamada a función
-
-from mini_turtle import adelante, abajo, reinicio
-
-adelante(10)
-abajo(3)
-
-adelante(10)
-abajo(3)
-reinicio()
-
-adelante(10)
-abajo(3)
-
-adelante(10)
-abajo(3)
-
-```
-```
-# Salida
- — — — — — — — — — —┐
-                    |
-                    |
-                    |
-                    🐢
-                     — — — — — — — — — —┐
-                                        |
-                                        |
-                                        |
-                                        🐢
- — — — — — — — — — —┐
-                    |
-                    |
-                    |
-                    🐢
-                     — — — — — — — — — —┐
-                                        |
-                                        |
-                                        |
-                                        🐢
-
-```
-
 ## 📂 Estructura del proyecto
 
 
