@@ -83,7 +83,7 @@ def reinicio():                  # Función para reiniciar la posición a 0
 
 ```
 
-### 2. 🎲 Interfaz `__init___.py`
+### 2. 🎲 Interfaz `__init__.py`
 
 <img width="303" height="58" alt="image" src="https://github.com/user-attachments/assets/d8d9f78b-0ec9-4c74-a410-61438908bfa9" />
 
